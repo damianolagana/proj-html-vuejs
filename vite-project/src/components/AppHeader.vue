@@ -59,7 +59,7 @@ header {
   div {
     text-align: center;
     line-height: 2rem;
-    margin: 3rem 0 3rem 0;
+    margin-top: 5rem;
 
     h1 {
       font-size: 40px;
