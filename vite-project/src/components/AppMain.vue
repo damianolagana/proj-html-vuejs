@@ -5,7 +5,27 @@ export default {
   name: "AppMain",
   data() {
     return {
+      statistic: [
+        {
+          figure: "1.926",
+          item: "FINISHED SESSIONS"
+        },
+        {
+          figure: "3.092+",
+          item: "ENROLLED LEARNERS"
+        },
+        {
+          figure: "200",
+          item: "ONLINE INSTRUCTORS"
+        },
+        {
+          figure: "100%",
+          item: "SATISFACTION RATE"
+        },
 
+
+
+      ]
     }
   },
   methods: {
@@ -27,26 +47,18 @@ export default {
         </div>
       </div>
       <div class="statistics">
-        <div>
-          <span>1.926</span>
-          <p>FINISHED SESSIONS</p>
+        <div v-for="stat in statistic">
+          <span>{{ stat.figure }}</span>
+          <p>{{ stat.item }}</p>
         </div>
-        <div>
-          <span>3.092+</span>
-          <p>ENROLLED LEARNERS</p>
-        </div>
-        <div>
-          <span>200</span>
-          <p>ONLINE INSTRUCTORS</p>
-        </div>
-        <div>
-          <span>100%</span>
-          <p>SATISFACTION RATE</p>
-        </div>
+
 
       </div>
     </div>
 
+    <div>
+
+    </div>
   </div>
 </template>
 
