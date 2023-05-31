@@ -21,3 +21,14 @@ body {
 .justifySpaceB {
     justify-content: space-between;
 }
+
+// *****BUTTONS****//
+
+.greenButton {
+    padding: 15px 30px;
+    color: white;
+    border-radius: 3%;
+    background-color: #20ad96;
+    border: none;
+    cursor: pointer;
+}
