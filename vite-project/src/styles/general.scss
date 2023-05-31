@@ -7,3 +7,17 @@
 body {
     font-family: sans-serif;
 }
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+// *********FLEX ******//
+.flex {
+    display: flex;
+}
+
+.justifySpaceB {
+    justify-content: space-between;
+}

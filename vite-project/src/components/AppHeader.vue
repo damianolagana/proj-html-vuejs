@@ -1,28 +1,31 @@
 <script >
-import { isSVGTag } from '@vue/shared';
+import AppNav from './AppNav.vue';
+
 
 
 
 export default {
   name: "AppHeader",
+  components: {
+    AppNav,
+
+  },
   data() {
-    return {};
+    return {
+
+    };
   },
   methods: {},
-  components: { isSVGTag }
+
 }
 
 </script>
 
 <template>
   <header>
-    <div class="jumboSvg">
+    <AppNav />
 
 
-    </div>
-
-    <!-- <img src="../assets/img/jumbotron-background-wave-medium.svg" alt="">
-              <img src="../assets/img/jumbotron-background-wave-small.svg" alt=""> -->
   </header>
 </template>
 
@@ -31,10 +34,8 @@ header {
   height: 800px;
   background-color: #1f1f52;
   background-size: cover;
-  position: relative;
 
-  .jumboSvg {
-    background-image: url(../assets/img/jumbotron-background-wave-big.svg);
-  }
+
+
 }
 </style>
