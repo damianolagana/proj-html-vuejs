@@ -1,8 +1,11 @@
 <script>
-
+import AppCourses from "./AppCourses.vue"
 
 export default {
   name: "AppMain",
+  components: {
+    AppCourses
+  },
   data() {
     return {
       statistic: [
@@ -109,14 +112,12 @@ export default {
       </div>
     </div>
   </section>
+  <AppCourses />
 </template>
 
 <style lang="scss" scoped>
 @use "../styles/general.scss";
 
-section {
-  background-color: #ffffff;
-}
 
 .quoteBox {
   display: flex;
@@ -220,7 +221,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 2rem;
+  margin-left: 3rem;
 
   h4 {
     padding: 10px;
