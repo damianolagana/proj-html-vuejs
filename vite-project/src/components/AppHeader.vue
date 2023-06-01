@@ -32,7 +32,7 @@ export default {
       </div>
       <div>
         <img src="../assets/img/home-6-hero-left-person-244x300.png" alt="">
-        <img src="../assets/img/home-6-hero-poster-final.jpg" alt="">
+        <img class="radius" src="../assets/img/home-6-hero-poster-final.jpg" alt="">
         <img src="../assets/img/home-6-hero-right-person-195x300.png" alt="">
       </div>
     </section>
@@ -41,6 +41,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.radius {
+  border-radius: 2%;
+}
+
 header {
   height: 800px;
   background-color: #1f1f52;
@@ -67,6 +71,7 @@ header {
 
     p {
       padding: 20px;
+      color: rgb(194, 189, 189);
     }
   }
 }
