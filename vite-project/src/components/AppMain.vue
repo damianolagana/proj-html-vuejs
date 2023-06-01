@@ -2,14 +2,15 @@
 import AppCourses from "./AppCourses.vue"
 import AppTalkAbout from "./AppTalkAbout.vue";
 import AppBlogSection from "./AppBlogSection.vue";
+import AppHelpSection from "./AppHelpSection.vue";
 
 export default {
   name: "AppMain",
   components: {
     AppCourses,
     AppTalkAbout,
-    AppBlogSection
-
+    AppBlogSection,
+    AppHelpSection
   },
   data() {
     return {
@@ -120,6 +121,7 @@ export default {
   <AppCourses />
   <AppTalkAbout />
   <AppBlogSection />
+  <AppHelpSection />
 </template>
 
 <style lang="scss" scoped>
