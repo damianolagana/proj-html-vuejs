@@ -36,7 +36,7 @@ export default {
 </script>
 
 <template>
-  <div class="container">
+  <section class="container">
     <div class="quoteBox">
 
       <div class="quote">
@@ -56,14 +56,67 @@ export default {
       </div>
     </div>
 
-    <div>
+    <div class="cardBox">
+      <div class="cardSet">
+        <div class="card">
+          <h3>Graphic Design</h3>
+          <p>Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness</p>
+          <div>
+            <img src="../assets/img/home-6-service-image-01.png" alt="">
 
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img src="../assets/img/home-6-service-image-02.png" alt="">
+
+          </div>
+          <h3>Business Administration</h3>
+          <p>have a passion for graphics and arts? Show your talents with confidence and self-assertiveness</p>
+        </div>
+
+
+      </div>
+      <div class="cardSet cardSet2">
+        <div class="card">
+          <h3>Idea Discussion</h3>
+          <p>have a passion for graphics and arts? Show your talents with confidence and self-assertiveness</p>
+          <div>
+            <img src="../assets/img/home-6-service-image-03.png" alt="">
+
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img src="../assets/img/home-6-service-image-04.png" alt="">
+
+          </div>
+          <h3>Web Development</h3>
+          <p>have a passion for graphics and arts? Show your talents with confidence and self-assertiveness</p>
+        </div>
+
+      </div>
+      <div class="servicesBox">
+        <h4>TOGETHER WE CAN CREATE</h4>
+        <h1>Services We <span>Can Provide</span> For My Clients</h1>
+        <ul>
+          <li>Select & customize courses to your preferences</li>
+          <li>Change the tutor and make arrangements</li>
+          <li>Participate in events to join others</li>
+          <li>Get the desired certificate delivered at house</li>
+        </ul>
+        <button class="greenButton">Get started for free</button>
+      </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
 @use "../styles/general.scss";
+
+section {
+  background-color: #ffffff;
+}
 
 .quoteBox {
   display: flex;
@@ -114,6 +167,86 @@ export default {
       font-weight: 600;
       color: #696969;
     }
+  }
+}
+
+.cardBox {
+  display: flex;
+  margin-top: 6rem;
+
+
+  .card {
+    background-color: white;
+    box-shadow: 1px 2px 15px #889999;
+    padding: 30px 20px 0 20px;
+    line-height: 1.5rem;
+    margin: 0 20px 30px 0;
+
+
+    h3 {
+      padding: 10px;
+    }
+
+    p {
+      padding-bottom: 10px;
+    }
+
+    div {
+      height: 220px;
+
+      img {
+        display: block;
+        width: 100%;
+        object-fit: contain;
+        height: 100%;
+      }
+    }
+
+  }
+
+}
+
+
+
+.cardSet {
+  width: 23%;
+}
+
+.cardSet2 {
+  margin-top: 4rem;
+}
+
+.servicesBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2rem;
+
+  h4 {
+    padding: 10px;
+    font-size: 12px;
+    color: grey;
+  }
+
+  h1 {
+    padding: 10px;
+    width: 46%;
+    font-size: 2rem;
+
+    span {
+      color: #20ad96;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 20px;
+    line-height: 2rem;
+    color: grey;
+  }
+
+  button {
+    width: 30%;
   }
 }
 </style>
