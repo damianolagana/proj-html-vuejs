@@ -14,7 +14,9 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { faFileLines } from '@fortawesome/free-regular-svg-icons'
 import { faUser } from '@fortawesome/free-regular-svg-icons'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faCalendar } from '@fortawesome/free-regular-svg-icons'
+import { faEye } from '@fortawesome/free-regular-svg-icons'
 
-library.add(faUserSecret, faArrowRight, faUser, faFileLines, faCartShopping, faCircleUser, faMagnifyingGlass, faChevronDown)
+library.add(faUserSecret, faEye, faCalendar, faArrowRight, faUser, faFileLines, faCartShopping, faCircleUser, faMagnifyingGlass, faChevronDown)
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
