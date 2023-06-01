@@ -1,10 +1,13 @@
 <script>
 import AppCourses from "./AppCourses.vue"
+import AppTalkAbout from "./AppTalkAbout.vue";
 
 export default {
   name: "AppMain",
   components: {
-    AppCourses
+    AppCourses,
+    AppTalkAbout
+
   },
   data() {
     return {
@@ -113,6 +116,7 @@ export default {
     </div>
   </section>
   <AppCourses />
+  <AppTalkAbout />
 </template>
 
 <style lang="scss" scoped>
