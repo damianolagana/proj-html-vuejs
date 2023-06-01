@@ -133,6 +133,7 @@ section {
 
   p {
     color: rgb(100, 97, 97);
+    line-height: 1.5rem;
   }
 
 }

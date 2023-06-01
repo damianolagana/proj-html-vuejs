@@ -35,6 +35,14 @@ body {
     justify-content: space-between;
 }
 
+.flexCol {
+    flex-direction: column;
+}
+
+.flexWrap {
+    flex-wrap: wrap;
+}
+
 // *****BUTTONS****//
 
 .greenButton {
